@@ -1,0 +1,3 @@
+/home/tati/Coursera/Yellow_belt/Week_1/Task_1_6/build/CMakeFiles/rebuild_cache.dir
+/home/tati/Coursera/Yellow_belt/Week_1/Task_1_6/build/CMakeFiles/Taks_1_6.dir
+/home/tati/Coursera/Yellow_belt/Week_1/Task_1_6/build/CMakeFiles/edit_cache.dir
