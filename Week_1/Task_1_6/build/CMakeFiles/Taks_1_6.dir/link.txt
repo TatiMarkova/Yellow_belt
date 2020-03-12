@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++1z -Wall -pedantic   CMakeFiles/Taks_1_6.dir/src/main.cpp.o  -o Taks_1_6 
