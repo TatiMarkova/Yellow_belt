@@ -22,7 +22,5 @@ int main(int argv, char* argc[]) {
     //PhoneNumber pn2("+7-1233");
     //cout << pn2.GetInternationalNumber() << '\n';
 
-
-
     return EXIT_SUCCESS;
 }

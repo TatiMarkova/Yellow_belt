@@ -1,3 +1,9 @@
+/****************************
+ * Coursera                 *
+ * Yellow belt              *
+ * @autor: Tatiana Markova  *
+ * task: 3_2                *
+ ****************************/
 #pragma once
 
 #include <string>

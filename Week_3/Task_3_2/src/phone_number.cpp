@@ -1,3 +1,9 @@
+/****************************
+ * Coursera                 *
+ * Yellow belt              *
+ * @autor: Tatiana Markova  *
+ * task: 3_2                *
+ ****************************/
 #include "phone_number.h"
 #include <sstream>
 #include <stdexcept>
@@ -29,8 +35,8 @@ PhoneNumber::PhoneNumber(const string& international_number) {
     getline(is, local_number_);
 
     if(sign != '+' || country_code_.empty()
-                    || city_code_.empty()
-                    || local_number_.empty()) {
+                   || city_code_.empty()
+                   || local_number_.empty()) {
         throw invalid_argument("Phone number must begin with '+' symbol and contain 3 parts separated by '-' symbol: "
             + international_number);
     } 
