@@ -18,13 +18,6 @@ using namespace std;
  *   3              *
  ********************/
 
-template<typename T>
-void RemoveDuplicates(vector<T>& elements) {
-    sort(rbegin(elements), rend(elements));
-    auto it = unique(begin(elements), end(elements));
-    elements.erase(it, end(elements));
-} 
-
 int main(int argv, char* argc[]) {
     int count;
     cin >> count;
