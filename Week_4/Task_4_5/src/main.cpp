@@ -9,42 +9,37 @@
 #include <cstdlib>
 #include <vector>
 #include <algorithm>
+#include <numeric>
 
 using namespace std;
 
 /********************
  * Input:  (main)   *
- *   6 4 7 0 1      *
- *   C++ C          *
+ *   3              *
  ********************/
 
-template<typename T>
-void RemoveDuplicates(vector<T>& elements) {
-    sort(rbegin(elements), rend(elements));
-    auto it = unique(begin(elements), end(elements));
-    elements.erase(it, end(elements));
-} 
-
 int main(int argv, char* argc[]) {
-    vector<int> v1 = {6, 4, 7, 6, 4, 4, 0, 1};
-    RemoveDuplicates(v1);
-    for (int x : v1) {
-        cout << x << " ";
-    }
-    cout << endl;
-
-    vector<string> v2 = {"C", "C++", "C++", "C", "C++"};
-    RemoveDuplicates(v2);
-    for (const string& s : v2) {
-        cout << s << " ";
-    }
-    cout << endl;
+    int count;
+    cin >> count;
+    vector<int> nums(count);
+    iota(rbegin(nums), rend(nums), 1);
+    do {
+        for (auto& num : nums) {
+            cout << num << ' ';
+        }
+        cout << '\n';
+    } while (prev_permutation(begin(nums), end(nums)));
+    cout << '\n';
 
     return EXIT_SUCCESS;
 }
 
 /********************
  * Output:          *
- *   7 4 6 1 0      *
- *   C++ C          *
+ *   3 2 1          *
+ *   3 1 2          *
+ *   2 3 1          *
+ *   2 1 3          *
+ *   1 3 2          *
+ *   1 2 3          *
  ********************/
